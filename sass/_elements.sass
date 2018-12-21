@@ -81,6 +81,29 @@
     -webkit-box-shadow: 0px 5px 18px 0px rgba(22,50,99,0.33)
     -moz-box-shadow: 0px 5px 18px 0px rgba(22,50,99,0.33)
     box-shadow: 0px 5px 18px 0px rgba(22,50,99,0.33)
+    position: relative
+    &::before
+      content: ''
+      display: block
+      width: 20px
+      height: 20px
+      position: absolute
+      left: 0
+      top: 0
+      background-repeat: no-repeat
+      background-image: url(../img/icons/left-ugl.png)
+      z-index: 1
+    &::after
+      content: ''
+      display: block
+      width: 20px
+      height: 20px
+      position: absolute
+      right: 0
+      bottom: 0
+      background-repeat: no-repeat
+      background-image: url(../img/icons/right-ugl.png)
+      z-index: 1
     .row
       margin-left: -4px
       margin-right: -4px
@@ -96,18 +119,165 @@
     margin-bottom: 18px
   &__select
   &__button
+    display: block
+    width: 100%
+    height: 50px
+    border: 2px solid #e1eaf4
+    background-color: #e1eaf4
+    line-height: 46px
+    text-transform: uppercase
+    font-size: 11px
+    color: #222222
+    font-weight: 900
+    letter-spacing: 1.5px
+    text-align: center
+    cursor: pointer
+    &:hover
+      text-decoration: none
+      color: #222222
+      background-color: transparent
 
 .p-advantages
+  display: flex
+  justify-content: space-between
   &__item
+    padding-left: 70px
+    display: block
+    padding-top: 12px
+    padding-bottom: 12px
+    position: relative
   &__icon
+    position: absolute
+    width: 60px
+    height: 60px
+    border-radius: 50%
+    border: 5px solid #fff
+    background-color: #5a7aad
+    background-repeat: no-repeat
+    background-position: center center
+    left: 0
+    top: 50%
+    margin-top: -30px
   &__description
+    color: #222222
+    font-size: 15px
+    line-height: 20px
+    letter-spacing: .3px
+    font-weight: 500
+    text-transform: uppercase
     b
+      font-weight: 900
+      color: #2c579c
 
 .p-online
+  position: relative
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
   &__info
+    display: block
+    text-align: right
+    font-size: 18px
+    color: #ffffff
+    line-height: 24px
+    letter-spacing: .3px
+    font-weight: 500
     span
+      font-weight: 900
+      color: #00c8fb
   &__input
+    max-width: 208px
+    width: 100%
+    height: 50px
+    line-height: 46px
+    border: 2px solid #fff
+    border-radius: 22px
+    background-color: #ffffff
+    padding: 0 28px
+    text-align: left
+    &::-webkit-input-placeholder
+      color: #222222
+    &::-moz-placeholder
+      color: #222222
+    &:-moz-placeholder
+      color: #222222
+    &:-ms-input-placeholder
+      color: #222222
   &__button
+    max-width: 208px
+    width: 100%
+    height: 50px
+    line-height: 48px
+    border: 2px solid #4abf52
+    background-color: #4abf52
+    border-radius: 22px
+    text-align: center
+    padding: 0 28px
+    color: #fefefe
+    text-transform: uppercase
+    font-size: 11px
+    letter-spacing: 1.5px
+    font-weight: 900
+    cursor: pointer
+    &:hover
+      background-color: transparent
+      color: #4abf52
   &__consent
+    position: absolute
+    bottom: -24px
+    right: 0
     input
+      display: none
     label
+      color: #ffffff
+      font-size: 13px
+      line-height: 17px
+      display: block
+      padding-left: 22px
+      position: relative
+      &::before
+        content: ''
+        width: 13px
+        height: 13px
+        border-radius: 1px
+        background-color: #ffffff
+        position: absolute
+        left: 0
+        top: 2px
+
+.p-title
+  display: inline-block
+  color: #222222
+  font-size: 27px
+  b
+    font-weight: bold
+    color: #2c579c
+
+.p-stockslider
+  &__item
+  &__wrapper
+    background-repeat: no-repeat
+    -webkit-background-size: cover
+    background-size: cover
+    height: 315px
+    position: relative
+    width: 100%
+    &::after
+      content: ''
+      background: -moz-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)
+      background: -webkit-linear-gradient(-45deg, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%)
+      background: linear-gradient(135deg, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%)
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 )
+      width: 100%
+      top: 0
+      bottom: 0
+      display: block
+      position: absolute
+      left: 0
+      z-index: 1
+  &__description
+    position: absolute
+    left: 36px
+    top: 0
+    z-index: 2

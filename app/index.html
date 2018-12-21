@@ -17,9 +17,10 @@
 	<!-- Styles -->
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="libs/elegant-icons/css/elegant-icons.min.css">
-	<link rel="stylesheet" href="libs/fontawesome-5.6.1/css/all.min.css">
+	<link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="libs/ionicons/css/ionicons.min.css">
 	<link rel="stylesheet" href="libs/jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" href="libs/owlcarousel2/dist/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -87,7 +88,7 @@
 		<div class="page__top">
 			<div class="container" style="height: 100%;">
 				<div class="row justify-content-center align-items-center" style="height: 100%;">
-					<div class="col-lg-7">
+					<div class="col-lg-8">
 						<div class="page__p-price">
 							<div class="p-price">
 								<div class="p-price__title">
@@ -129,21 +130,21 @@
 						<div class="page__p-advantages">
 							<ul class="p-advantages">
 								<li class="p-advantages__item">
-									<i class="p-advantages__icon"></i>
+									<i class="p-advantages__icon" style="background-image: url(img/icons/work.png);"></i>
 									<p class="p-advantages__description">
 										Работаем более <br /> <b>15 лет</b>
 									</p>
 								</li>
 								<li class="p-advantages__item">
-									<i class="p-advantages__icon"></i>
+									<i class="p-advantages__icon" style="background-image: url(img/icons/garatn.png);"></i>
 									<p class="p-advantages__description">
 										<b>100%</b> Гарантия <br /> качества
 									</p>
 								</li>
 								<li class="p-advantages__item">
-									<i class="p-advantages__icon"></i>
+									<i class="p-advantages__icon" style="background-image: url(img/icons/teem.png);"></i>
 									<p class="p-advantages__description">
-										Команда из 35 <br /> профессионалов
+										Команда из 35 <br /> <b>профессионалов</b>
 									</p>
 								</li>
 							</ul>
@@ -155,7 +156,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-5">
-							<div class="page__p-online">
+							<div class="page__p-online page__p-online-left">
 								<div class="p-online">
 									<p class="p-online__info">
 										Оставьте онлайн заявку на ремонт Вашего автомобиля и мы перезвоним вам <span>за 20 секунд</span>
@@ -164,14 +165,16 @@
 							</div>
 						</div>
 						<div class="col-lg-7">
-							<div class="page__p-online">
+							<div class="page__p-online page__p-online-right">
 								<div class="p-online">
 									<form action="">
-										<input type="text" class="p-online__input" placeholder="Ваше Имя">
-										<input type="text" class="p-online__input phone" placeholder="+7(___)___-__-__">
-										<button type="submit" class="p-online__button">
-											Отправить
-										</button>
+										<div class="p-online__wrapper">
+											<input type="text" class="p-online__input" placeholder="Ваше Имя">
+											<input type="text" class="p-online__input phone" placeholder="+7(___)___-__-__">
+											<button type="submit" class="p-online__button">
+												Отправить
+											</button>
+										</div>
 										<div class="p-online__consent">
 											<input type="checkbox" id="consent-online">
 											<label for="consent-online">
@@ -186,12 +189,67 @@
 				</div>
 			</div>
 		</div>
+		<div class="page__section page__section-index page__section-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="page__p-title">
+							<h2 class="p-title">
+								Акции <b>Автотехцентра АСТОР</b>
+							</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="page__p-stockslider">
+							<div class="p-stockslider owl-carousel">
+								<div class="p-stockslider__item">
+									<div class="p-stockslider__wrapper" style="background-image: url(img/stock1.jpg);">
+										<div class="p-stockslider__description">
+											<h2 class="p-stockslider__title">
+												<span>Получи скидку 20%</span> на диагностику двигателя авто!
+											</h2>
+											<div class="p-stockslider__row">
+												<span class="p-stockslider__oldprice">7800 руб</span>
+												<span class="p-stockslider__туцprice">6200 руб</span>
+											</div>
+											<a href="#" class="p-stockslider__btn">
+												Подробнее
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="p-stockslider__item">
+									<div class="p-stockslider__wrapper" style="background-image: url(img/stock2.jpg);">
+										<div class="p-stockslider__description">
+											<h2 class="p-stockslider__title">
+												Приведи друга и <span>получи скидку 10%</span> на замену масла
+											</h2>
+											<div class="p-stockslider__row">
+												<span class="p-stockslider__oldprice">7800 руб</span>
+												<span class="p-stockslider__туцprice">6200 руб</span>
+											</div>
+											<a href="#" class="p-stockslider__btn">
+												Подробнее
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<!-- Scripts -->
 	<script type="text/javascript" src="libs/jquery/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="libs/jquery-ui/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="libs/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript" src="libs/owlcarousel2/dist/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/slider.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<!-- End_Scripts -->
 </body>
