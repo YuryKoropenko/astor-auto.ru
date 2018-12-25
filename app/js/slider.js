@@ -2,6 +2,7 @@ $(function() {
     $('.p-stockslider').owlCarousel({
         loop:true,
         margin:60,
+        dots:false,
         nav:true,
         responsive:{
             0:{
@@ -14,5 +15,5 @@ $(function() {
                 items:2
             }
         }
-    })
+    });
 });
