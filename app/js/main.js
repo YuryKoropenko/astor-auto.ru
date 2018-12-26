@@ -4,4 +4,8 @@ $(function() {
 
 	/* Селекты */
 	$('.select').selectmenu();
+
+	/* CallBack форма */
+	$('.h-callback__btn').fancybox();
+	$('.p-contacts__callback').fancybox();
 });
