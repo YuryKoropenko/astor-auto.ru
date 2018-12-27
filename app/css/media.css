@@ -46,7 +46,7 @@
     justify-content: center;
   }
   .p-services__item {
-    width: 25%;
+    width: 100%;
     margin-bottom: 20px;
   }
   .page__p-wwus {
@@ -99,6 +99,9 @@
   }
   .h-callback__btn {
     width: 188px;
+  }
+  .p-services {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 

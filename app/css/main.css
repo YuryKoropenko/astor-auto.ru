@@ -1006,12 +1006,13 @@ body {
 }
 
 .p-services {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .p-services__item {
   width: auto;
+  margin-bottom: 20px;
 }
 
 .p-services__top {
