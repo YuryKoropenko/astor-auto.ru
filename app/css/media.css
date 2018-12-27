@@ -1,51 +1,110 @@
 /*==========  Desktop First Method  ==========*/
-/* Large Devices, Wide Screens */
-@media only screen and (max-width: 1200px) {
-  /**/
+@media (max-width: 1499px) {
+  .p-stockslider .owl-prev {
+    left: -30px;
+  }
+  .p-stockslider .owl-next {
+    right: -30px;
+  }
 }
 
-/* Medium Devices, Desktops */
-@media only screen and (max-width: 992px) {
-  /**/
+@media (max-width: 1260px) {
+  .p-stockslider .owl-prev {
+    left: -15px;
+  }
+  .p-stockslider .owl-next {
+    right: -15px;
+  }
 }
 
-/* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
-  /**/
+@media (max-width: 1199px) {
+  .h-nav__item {
+    margin-left: 30px;
+  }
 }
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {
-  /**/
-}
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width: 320px) {
-  /**/
+@media (max-width: 991px) {
+  .page__p-online-left {
+    margin-right: 0;
+  }
+  .p-online__info {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  .p-online__input {
+    max-width: 34%;
+  }
+  .page__top {
+    height: auto;
+  }
+  .p-services {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .p-services__item {
+    width: 25%;
+    margin-bottom: 20px;
+  }
+  .page__p-wwus {
+    padding-bottom: 40px;
+  }
+  .page__section-bg {
+    padding-bottom: 68px;
+  }
+  .p-online-page .p-online__input {
+    margin-bottom: 16px;
+  }
+  .p-online-page .p-online__textarea {
+    margin-top: 0;
+  }
+  .page__p-online-right {
+    padding-top: 20px;
+  }
+  .p-model {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .page__p-news {
+    padding-right: 0;
+    margin-bottom: 56px;
+  }
+  .p-contacts-right {
+    padding-left: 0;
+    padding-top: 56px;
+  }
+  .page__p-your {
+    margin-top: 20px;
+  }
+  .f-addr__block {
+    width: 100%;
+    max-width: 348px;
+  }
+  .p-price__form .col-lg-4 {
+    margin-bottom: 16px;
+  }
+  .p-price__form .col-lg-4:last-child {
+    margin-bottom: 0;
+  }
+  .h-logo__img {
+    height: 66px;
+  }
+  .h-nav__item {
+    margin-left: 10px;
+  }
+  .h-nav__link {
+    font-size: 12px;
+  }
+  .h-callback__btn {
+    width: 188px;
+  }
 }
 
 /*==========  Mobile First Method  ==========*/
-/* Custom, iPhone Retina */
-@media only screen and (min-width: 320px) {
-  /**/
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width: 480px) {
-  /**/
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
-  /**/
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width: 992px) {
-  /**/
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width: 1200px) {
-  /**/
+@media (min-width: 768px) {
+  .header__h-mobnaw {
+    display: none;
+  }
 }
