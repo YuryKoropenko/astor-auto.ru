@@ -142,6 +142,80 @@
 					</div>
 				</div>
 			</div>
+			<div class="header__mobmenu">
+				<div class="h-mobmenu">
+					<a href="#" class="h-mobmenu__close">
+						<i class="fa fa-times" aria-hidden="true"></i>
+					</a>
+					<ul class="h-mobmenu__list">
+						<li class="h-mobmenu__item">
+							<a href="#" class="h-mobmenu__link">
+								О компании
+							</a>
+						</li>
+						<li class="h-mobmenu__item">
+							<a href="#" class="h-mobmenu__link">
+								Магазин
+							</a>
+						</li>
+						<li class="h-mobmenu__item h-mobmenu__item-submenu">
+							<a href="#" class="h-mobmenu__link">
+								Услуги
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+							</a>
+							<ul class="h-mobmenu__sublist">
+								<li class="h-mobmenu__subitem">
+									<a href="#" class="h-mobmenu__sublink">
+										Покраска автомобиля
+									</a>
+								</li>
+								<li class="h-mobmenu__subitem">
+									<a href="#" class="h-mobmenu__sublink">
+										Диагностика автомобиля
+									</a>
+								</li>
+								<li class="h-mobmenu__subitem">
+									<a href="#" class="h-mobmenu__sublink">
+										Тюнинг автомобиля
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="h-mobmenu__item">
+							<a href="#" class="h-mobmenu__link">
+								Акции
+							</a>
+						</li>
+						<li class="h-mobmenu__item">
+							<a href="#" class="h-mobmenu__link">
+								Контакты
+							</a>
+						</li>
+					</ul>
+					<div class="h-callback">
+						<a href="tel:+78123787375" class="h-callback__phone">
+							+7 (812) 378-73-75
+						</a>
+						<a href="#callback" class="h-callback__btn">
+							Обратный звонок
+						</a>
+					</div>
+					<div class="p-join">
+						<span>Присоединяйтесь</span>
+						<ul class="p-join__list">
+							<li class="p-join__item">
+								<a href="#" class="p-join__link" style="background-image: url(img/icons/vk.png);"></a>
+							</li>
+							<li class="p-join__item">
+								<a href="#" class="p-join__link" style="background-image: url(img/icons/inst.png);"></a>
+							</li>
+							<li class="p-join__item">
+								<a href="#" class="p-join__link" style="background-image: url(img/icons/youtube.png);"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
 	</header>
 	<div class="page">
@@ -1027,6 +1101,9 @@
 								</a>
 							</li>
 						</ul>
+						<a href="#" class="p-model__more">
+							Еще марки
+						</a>
 					</div>
 				</div>
 			</div>
@@ -1103,7 +1180,7 @@
 									<div class="page__p-articles">
 										<div class="p-articles">
 											<div class="p-news__sectiontitle">
-												Новости <span>компании</span>
+												Свежие <span>новости</span>
 												<div class="p-arrowtrigger">
 													<a href="#" class="p-arrowtrigger__left" name="p-articles__slider-left"></a>
 													<div class="p-arrowtrigger__line"></div>
@@ -1129,7 +1206,7 @@
 															</p>
 														</div>
 													</div>
-													<div class="p-articles__item">
+													<div class="p-articles__item hidden-md">
 														<div class="p-articles__wrapper">
 															<div class="p-articles__left" style="background-image: url(img/news-1.jpg);"></div>
 															<div class="p-news__title p-articles__title">
@@ -1165,7 +1242,7 @@
 															</p>
 														</div>
 													</div>
-													<div class="p-articles__item">
+													<div class="p-articles__item hidden-md">
 														<div class="p-articles__wrapper">
 															<div class="p-articles__left" style="background-image: url(img/news-1.jpg);"></div>
 															<div class="p-news__title p-articles__title">
@@ -1340,8 +1417,9 @@
 				<div class="col-lg-4 col-md-6">
 					<div class="footer__f-menu">
 						<div class="f-menu">
-							<b class="footer__title">
+							<b class="footer__title active">
 								популярные Услуги
+								<i class="fa fa-angle-down visible-md" aria-hidden="true"></i>
 							</b>
 							<ul class="f-menu__list">
 								<li class="f-menu__item">
@@ -1388,38 +1466,41 @@
 						<div class="f-addr">
 							<b class="footer__title">
 								Автосервис «АСТОР»
+								<i class="fa fa-angle-down visible-md" aria-hidden="true"></i>
 							</b>
-							<ul class="f-addr__list">
-								<li class="f-addr__item">
-									<i class="fa fa-map-marker" aria-hidden="true"></i>
-									Санкт-Петербург, Витебский пр., д. 17, к. 10
-								</li>
-								<li class="f-addr__item">
-									<i class="fa fa-phone" aria-hidden="true"></i>
-									(812) 378-73-75
-								</li>
-								<li class="f-addr__item">
-									<i class="fa fa-envelope" aria-hidden="true"></i>
-									mail@astor-auto.ru
-								</li>
-							</ul>
-							<div class="f-addr__subtitle">
-								Мы в Instagram
+							<div class="f-addr__hidden">
+								<ul class="f-addr__list">
+									<li class="f-addr__item">
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+										Санкт-Петербург, Витебский пр., д. 17, к. 10
+									</li>
+									<li class="f-addr__item">
+										<i class="fa fa-phone" aria-hidden="true"></i>
+										(812) 378-73-75
+									</li>
+									<li class="f-addr__item">
+										<i class="fa fa-envelope" aria-hidden="true"></i>
+										mail@astor-auto.ru
+									</li>
+								</ul>
+								<div class="f-addr__subtitle">
+									Мы в Instagram
+								</div>
+								<ul class="f-addr__block">
+									<li class="f-addr__blockitem">
+										<a href="#" class="f-addr__blockimg" style="background-image: url(img/inst-1.jpg);"></a>
+									</li>
+									<li class="f-addr__blockitem">
+										<a href="#" class="f-addr__blockimg" style="background-image: url(img/inst-2.jpg);"></a>
+									</li>
+									<li class="f-addr__blockitem">
+										<a href="#" class="f-addr__blockimg" style="background-image: url(img/inst-3.jpg);"></a>
+									</li>
+									<li class="f-addr__blockitem">
+										<a href="#" class="f-addr__blockimg" style="background-image: url(img/inst-4.jpg);"></a>
+									</li>
+								</ul>
 							</div>
-							<ul class="f-addr__block">
-								<li class="f-addr__blockitem">
-									<a href="#" class="f-addr__blockimg" style="background-image: url(img/inst-1.jpg);"></a>
-								</li>
-								<li class="f-addr__blockitem">
-									<a href="#" class="f-addr__blockimg" style="background-image: url(img/inst-2.jpg);"></a>
-								</li>
-								<li class="f-addr__blockitem">
-									<a href="#" class="f-addr__blockimg" style="background-image: url(img/inst-3.jpg);"></a>
-								</li>
-								<li class="f-addr__blockitem">
-									<a href="#" class="f-addr__blockimg" style="background-image: url(img/inst-4.jpg);"></a>
-								</li>
-							</ul>
 						</div>
 					</div>
 				</div>
