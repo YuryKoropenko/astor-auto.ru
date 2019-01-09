@@ -19,6 +19,34 @@ $(function() {
     });
 
     /*  */
+    $('.p-revslider').owlCarousel({
+        loop:true,
+        margin:24,
+        dots:false,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            768:{
+                items:2
+            },
+            992:{
+                items:3
+            }
+        }
+    });
+
+    /*  */
+    $('.p-workimg__slider').owlCarousel({
+        loop:true,
+        margin:0,
+        dots:false,
+        nav:true,
+        items:1
+    });
+
+    /*  */
     $('.p-news__slider').owlCarousel({
         loop:true,
         margin:0,

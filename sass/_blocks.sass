@@ -39,6 +39,7 @@ body
 		background-size: cover
 		background-position: center center
 		position: relative
+		overflow-x: hidden
 		&::after
 			content: ''
 			left: 0
@@ -51,6 +52,8 @@ body
 			background-color: rgba(#fff,.81)
 			z-index: 1
 			position: absolute
+		&-new
+			height: 343px
 	&__p-price
 		position: relative
 		z-index: 2
@@ -131,6 +134,14 @@ body
 			height: 432px
 			padding: 0
 			margin-bottom: 75px
+		&-info
+			background-repeat: no-repeat
+			-webkit-background-size: cover
+			background-size: cover
+			background-position: center top
+		&-in
+			padding-top: 24px
+			padding-bottom: 0
 
 	&__p-title
 		text-align: center
@@ -194,6 +205,28 @@ body
 		border-bottom: 1px solid #d2d2d2
 	&__p-path
 		padding-top: 24px
+	&__p-workmore
+		display: block
+		text-align: center
+		padding-top: 58px
+	&__p-serinfo
+		padding: 93px 0
+	&__p-cars
+		margin-bottom: 30px
+	&__p-pagetitle
+		text-align: center
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		-webkit-transform: translateY(-50%)
+		left: 0
+		right: 0
+		z-index: 2
+		margin-top: 50px
+	&__p-articles
+		padding-bottom: 80px
+	&__p-pagin
+		text-align: center
 
 .footer
 	background-repeat: no-repeat

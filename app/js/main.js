@@ -15,6 +15,8 @@ $(function() {
 	/* CallBack форма */
 	$('.h-callback__btn').fancybox();
 	$('.p-contacts__callback').fancybox();
+	$('.p-price__button').fancybox();
+	$('.p-online__button-mark').fancybox();
 
 	/* mob-footer */
     if($(window).width() < 768) {
@@ -47,6 +49,23 @@ $(function() {
 		 event.stopPropagation();
 		 });
         return false;
+    });
+
+    /* Якоря */
+    $('.p-newmenu__link').on('click', function() {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 800);
+    });
+
+    /* Прикрепить файл */
+    $('.p-online__file input[type=file]').change(function(){
+        var filename = $(this).val().replace(/.*\\/, "");
+        $('.p-online__file span').text(filename);
+        $('.p-online__file span').css({
+            'padding-left': '0'
+        });
     });
 
 

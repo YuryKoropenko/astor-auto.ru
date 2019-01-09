@@ -272,6 +272,7 @@
     max-width: 208px
     width: 100%
     height: 50px
+    display: block
     line-height: 48px
     border: 2px solid #4abf52
     background-color: #4abf52
@@ -287,6 +288,7 @@
     &:hover
       background-color: transparent
       color: #4abf52
+      text-decoration: none
   &__consent
     position: absolute
     bottom: -24px
@@ -355,6 +357,50 @@
     color: #ffffff
     letter-spacing: .3px
     float: left
+  &__file
+    position: relative
+    overflow: hidden
+    width: 100%
+    height: 50px
+    border: 1px dashed #ffffff
+    border-radius: 22px
+    &::before
+      content: ''
+      display: block
+      position: absolute
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+      background-color: #ffffff
+      border-radius: 22px
+
+    label
+      position: absolute
+      left: -1px
+      right: -1px
+      bottom: -1px
+      top: -1px
+      cursor: pointer
+      border-radius: 22px
+      text-align: center
+    input[type="file"]
+      display: none
+    span
+      position: relative
+      z-index: 2
+      color: #5a7aad
+      font-size: 14px
+      line-height: 50px
+      padding-left: 25px
+      position: relative
+      .fa
+        position: absolute
+        left: 0
+        top: 1px
+        font-size: 14px
+        color: #5a7aad
+
 
 .p-title
   display: inline-block
@@ -566,8 +612,8 @@
   .phone
     text-align: center
   .row
-    margin-left: 5px
-    margin-right: 5px
+    margin-left: -5px
+    margin-right: -5px
   .col-lg-6, .col-12
     padding-left: 5px
     padding-right: 5px
@@ -997,6 +1043,86 @@
   width: 100%
   border: 1px solid #2c579c
   padding: 45px
+  svg
+    display: none
+  &-med
+    max-width: 500px
+    padding: 0
+    .fancybox-button
+      background-image: url(../img/icons/modal-close-white.png)
+  &-big
+    max-width: 726px
+    padding: 0
+    .fancybox-button
+      background-image: url(../img/icons/modal-close-white.png)
+    .popup__top
+      padding-left: 28px
+      padding-right: 28px
+  &__mark
+    padding: 8px 28px 0
+  &__markresult
+    padding-top: 15px
+    padding-left: 7px
+    padding-right: 7px
+    overflow-y: auto
+    max-height: 380px
+    margin-bottom: 30px
+    overflow-x: hidden
+  &__inputauto
+    height: 45px
+    border: none
+    display: block
+    width: 100%
+    border-bottom: 2px solid #e5e5e5
+    border-top: 2px solid transparent
+    background-color: transparent
+    margin-bottom: 15px
+    &::-webkit-input-placeholder
+      color: #222222
+    &::-moz-placeholder
+      color: #222222
+    &:-moz-placeholder
+      color: #222222
+    &:-ms-input-placeholder
+      color: #222222
+  &__online
+    padding-top: 20px
+    padding-left: 40px
+    padding-right: 40px
+    padding-bottom: 45px
+  &__subtitle
+    font-size: 18px
+    color: #222222
+    line-height: 26px
+    font-weight: 500
+    display: block
+    text-align: center
+    margin-bottom: 12px
+    span
+      color: #2c579c
+  &__subinfo
+    display: block
+    margin-bottom: 16px
+    text-align: center
+    font-weight: 300
+    color: #000022
+    line-height: 20px
+  &__top
+    background-color: #2c579c
+    padding-left: 45px
+    padding-right: 45px
+    text-align: center
+  &__onlinttitle
+    color: #ffffff
+    font-weight: bold
+    font-size: 20px
+    line-height: 20px
+    padding: 28px 0
+    text-transform: uppercase
+    letter-spacing: .3px
+    span
+      color: #4abf52
+      letter-spacing: .3px
   &__title
     color: #222222
     text-transform: uppercase
@@ -1090,6 +1216,9 @@
     top: 0
     bottom: 0
     z-index: 1
+    &-new
+      left: auto
+      right: 0
   &__img
     width: 100%
     height: 100%
@@ -1099,6 +1228,9 @@
     background-position: center center
   &__right
     padding-left: 30px
+    &-new
+      padding-left: 0
+      padding-right: 30px
     &-wp
       
   &__text
@@ -1161,6 +1293,9 @@
     display: block
     background-color: #ffffff
     position: relative
+    -webkit-box-shadow: 0px 5px 18px 0px rgba(22,50,99,0.33)
+    -moz-box-shadow: 0px 5px 18px 0px rgba(22,50,99,0.33)
+    box-shadow: 0px 5px 18px 0px rgba(22,50,99,0.33)
     &::before
       content: ''
       display: block
@@ -1183,3 +1318,368 @@
       background-repeat: no-repeat
       background-image: url(../img/icons/right-ugl.png)
       z-index: 1
+  &__text
+    p
+      display: block
+      color: #222222
+      font-size: 17px
+      line-height: 27px
+      margin-bottom: 12px
+    span
+      font-size: 17px
+      color: #2c579c
+      line-height: 25px
+      font-weight: 500
+    b
+      text-transform: uppercase
+      font-size: 20px
+      line-height: 32px
+  &__form
+    padding-left: 30px
+    .p-online__input
+      max-width: none
+      border: 2px solid #5a7aad
+      margin-bottom: 10px
+    .phone
+      text-align: center
+    .p-online__button
+      max-width: none
+      margin-bottom: 10px
+    .p-online__consent
+      position: static
+      margin-bottom: 10px
+      label
+        color: #333333
+        &::before
+          border: 1px solid #d2d2d2
+
+.p-online-page-new
+  .p-online__subtitle-new
+    padding-bottom: 16px
+  .p-online__consent
+    padding-left: 0
+    padding-top: 16px
+  .p-online__text
+    float: none
+    width: 100%
+  .p-online__row
+    padding-bottom: 20px
+  .p-online__iconimg
+    display: block
+    width: 100%
+    height: 100%
+    background-repeat: no-repeat
+    background-position: center center
+
+.page__p-online-right-new
+  padding-right: 50px
+
+.page__p-online-left-new
+  padding-left: 30px
+
+.p-revslider
+  &__item
+    height: 336px
+    iframe
+      width: 100%
+      height: 100%
+      display: block
+
+.p-pricelist
+  &__description
+    color: #222222
+    font-weight: 300
+    line-height: 25px
+    display: block
+    margin-bottom: 25px
+  &__list
+  &__top
+    padding-right: 207px
+    position: relative
+    .p-pricelist__left
+      background-color: #5a7aad
+      padding-left: 34px
+      text-transform: uppercase
+      padding-right: 34px
+      padding-top: 17px
+      padding-bottom: 17px
+      line-height: 25px
+      color: #ffffff
+      font-weight: bold
+    .p-pricelist__right
+      width: 207px
+      padding-top: 17px
+      padding-bottom: 17px
+      display: block
+      text-align: center
+      text-transform: uppercase
+      position: absolute
+      right: 0
+      top: 0
+      bottom: 0
+      background-color: #2c579c
+      line-height: 25px
+      color: #ffffff
+      font-weight: bold
+  &__content
+    background-color: #ffffff
+    padding-left: 37px
+    padding-right: 37px
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(22,50,99,0.16)
+    -moz-box-shadow: 0px 0px 7px 0px rgba(22,50,99,0.16)
+    box-shadow: 0px 0px 7px 0px rgba(22,50,99,0.16)
+  &__row
+    display: block
+    width: 100%
+    border-bottom: 1px solid #dcdcdc
+    padding-right: 170px
+    position: relative
+    &:last-child
+      border-bottom: none
+    .p-pricelist__left
+      padding: 12px 0
+      line-height: 25px
+      color: #222222
+      font-weight: 300
+    .p-pricelist__right
+      display: block
+      position: absolute
+      right: -37px
+      top: 0
+      bottom: 0
+      width: 207px
+      border-left: 1px solid #dcdcdc
+      line-height: 25px
+      padding: 12px 0
+      font-size: 14px
+      letter-spacing: .7px
+      text-align: center
+      strong
+        font-weight: 900
+        color: #222222
+        letter-spacing: .7px
+        font-size: 14px
+        text-transform: uppercase
+
+.p-workimg
+  display: block
+  border: 3px solid #cbcbcb
+  margin-bottom: 30px
+  &__img
+    display: block
+    width: 100%
+    height: auto
+
+.row-work
+  margin-bottom: -30px
+
+.p-workmore
+  display: block
+  width: 100%
+  height: 50px
+  border: 2px solid #e1eaf4
+  background-color: #e1eaf4
+  line-height: 46px
+  text-transform: uppercase
+  font-size: 11px
+  color: #222222
+  font-weight: 900
+  letter-spacing: 1.5px
+  text-align: center
+  cursor: pointer
+  max-width: 208px
+  margin-left: auto
+  margin-right: auto
+  &:hover
+    text-decoration: none
+    color: #222222
+    background-color: transparent
+
+.p-serinfo
+  padding: 32px 40px 16px
+  display: block
+  background-color: #ffffff
+  position: relative
+  -webkit-box-shadow: 0px 5px 18px 0px rgba(22,50,99,0.33)
+  -moz-box-shadow: 0px 5px 18px 0px rgba(22,50,99,0.33)
+  box-shadow: 0px 5px 18px 0px rgba(22,50,99,0.33)
+  &__title
+    color: #2c579c
+    line-height: 27px
+    font-size: 20px
+    font-weight: bold
+    text-transform: uppercase
+    display: block
+    text-align: center
+  &__description
+    display: block
+    color: #222222
+    font-size: 17px
+    text-align: center
+    line-height: 27px
+  &__info
+    display: block
+    text-align: center
+    padding-top: 10px
+    line-height: 20px
+    font-weight: 300
+    color: #222222
+  &__form
+    text-align: center
+  &__wp
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 25px
+  .p-online__input
+    border: 2px solid #5a7aad
+    max-width: 32%
+    text-align: left
+  .phone
+    text-align: center
+  .p-online__button
+    max-width: 32%
+  .p-online__consent
+    position: static
+    display: inline-block
+    padding-top: 10px
+    label
+      color: #333333
+      font-weight: 300
+      &::before
+        border: 1px solid #d2d2d2
+
+.p-mark
+  display: inline-flex
+  align-items: center
+  margin-bottom: 30px
+  min-height: 33px
+  &__logo
+    display: inline-block
+    float: left
+    img
+      width: auto
+      height: auto
+      display: block
+      max-width: 58px
+      max-height: 33px
+  &__title
+    margin-left: 16px
+    font-size: 14px
+    line-height: 18px
+    color: #222222
+  &:hover
+    text-decoration: none
+    color: #2c579c
+    .p-mark__title
+      text-decoration: none
+      color: #2c579c
+
+.p-cars
+  display: block
+  &__top
+    height: 130px
+    display: flex
+    justify-content: center
+    align-items: center
+  &__img
+    display: block
+    max-width: 100%
+    max-height: 100%
+  &__title
+    margin-top: 10px
+    display: block
+    text-align: center
+    color: #222222
+    line-height: 20px
+  &:hover
+    text-decoration: none
+    color: #2c579c
+    .p-cars__title
+      text-decoration: none
+      color: #2c579c
+
+.row-cars
+  margin-bottom: -30px
+
+.p-model__more-car
+  margin-top: 30px
+
+.p-pagetitle
+  font-size: 40px
+  font-weight: bold
+  color: #222222
+  letter-spacing: .3px
+
+.p-articles
+  &__top
+    display: block
+    background-repeat: no-repeat
+    background-position: center center
+    -webkit-background-size: cover
+    background-size: cover
+    height: 265px
+  &__bottom
+    display: block
+    padding: 25px 23px 35px
+    border: 1px solid #f0f0f0
+    border-top: none
+  &__title
+    display: block
+    line-height: 20px
+    font-weight: bold
+    color: #222222
+    text-transform: uppercase
+    margin-bottom: 8px
+  &__description
+    line-height: 20px
+    overflow: hidden
+    height: 60px
+    color: #222222
+    font-weight: 300
+    display: block
+    margin-bottom: 20px
+  &__detal
+    font-size: 15px
+    color: #2c579c
+    padding-right: 21px
+    position: relative
+    display: inline-block
+    .fa
+      position: absolute
+      right: 0
+      top: 2px
+    &:hover
+      text-decoration: none
+      color: #2c579c
+      opacity: .7
+
+.p-pagin
+  font-size: 0
+  display: inline-block
+  &__item
+    margin: 0 9px
+    display: inline-block
+  &__link
+    color: #222222
+    width: 45px
+    height: 45px
+    line-height: 43px
+    text-align: center
+    border: 1px solid #f0f0f0
+    font-size: 17px
+    display: flex
+    justify-content: center
+    align-items: center
+    .fa
+      font-size: 14px
+      display: block
+      color: #222222
+    &:hover
+      text-decoration: none
+      color: #222222
+  &__item.active
+    .p-pagin__link
+      color: #ffffff
+      background-color: #2c579c
+      border: 1px solid #2c579c
