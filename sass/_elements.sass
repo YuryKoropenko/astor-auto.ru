@@ -414,6 +414,8 @@
   .owl-nav
     display: block !important
   &__item
+    &-page
+      padding-bottom: 60px
   &__wrapper
     background-repeat: no-repeat
     -webkit-background-size: cover
@@ -1683,3 +1685,100 @@
       color: #ffffff
       background-color: #2c579c
       border: 1px solid #2c579c
+
+.p-error
+  display: block
+  width: 100%
+  height: auto
+
+.p-errortext
+  text-align: center
+  &__description
+    display: block
+    text-align: center
+    padding-bottom: 20px
+    color: #222222
+    font-weight: 300
+    line-height: 20px
+  &__link
+    display: inline-block
+    color: #2c579c
+    font-weight: 500
+    line-height: 20px
+    padding-bottom: 12px
+    &:hover
+      text-decoration: none
+      color: #2c579c
+      opacity: .7
+  &__bottom
+    display: block
+    width: 100%
+    text-align: center
+    padding-top: 12px
+  &__index
+    display: inline-block
+    font-size: 20px
+    font-weight: 500
+    line-height: 34px
+    color: #2c579c
+    &:hover
+      text-decoration: none
+      color: #2c579c
+      opacity: .7
+
+.row-stock
+  margin-left: -30px
+  margin-right: -30px
+  .col-lg-6
+    padding-left: 30px
+    padding-right: 30px
+
+.p-stockdetal
+  &__text
+    text-align: left
+    padding-right: 50px
+    p
+      font-size: 20px
+      line-height: 30px
+      font-weight: 500
+      color: #222222
+      display: block
+      padding-bottom: 12px
+    strong
+      display: block
+      text-transform: uppercase
+      color: #2c579c
+      font-size: 30px
+      line-height: 37px
+      font-weight: 900
+    span
+      display: block
+      line-height: 37px
+      color: #f04343
+      font-size: 25px
+      font-weight: 500
+      text-transform: none
+      b
+        font-weight: 900
+
+.p-diagnost__block-stock
+  padding: 40px 60px 30px
+  max-width: 376px
+  margin-left: auto
+  margin-right: auto
+  width: 100%
+  .p-diagnost__form
+    padding-left: 0
+  .p-online__consent label
+    text-align: left
+
+.p-description
+  p
+    font-size: 16px
+    line-height: 20px
+    font-weight: 300
+    color: #222222
+    display: block
+    padding-bottom: 20px
+  b, strong
+    font-weight: bold
